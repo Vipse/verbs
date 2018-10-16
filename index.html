@@ -6,8 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <style>.someLongDiv {
+        animation-iteration-count: infinite;
+
+    }
+    </style>
 </head>
 <body>
-
+<button id="toggleFadeIn">123</button>
+<div class="someLongDiv animated">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos exercitationem in ipsum,
+    labore necessitatibus quam sint sunt vel! Modi, nobis.
+</div>
+<script>
+    let element = document.getElementById("toggleFadeIn");
+    let element2 = document.querySelector(".someLongDiv");
+    element.addEventListener('click', () => {
+        // element2.classList.add("fadeOutDown")
+        element2.classList.add("fadeInDown")
+    })
+</script>
 </body>
 </html>
